@@ -7,3 +7,13 @@ menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('show'); // Toggle 'show' class for the menu
     menuToggle.classList.toggle('active'); // Toggle 'active' class for the icon
 });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+
