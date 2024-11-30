@@ -125,9 +125,6 @@ nav ul li a:hover {
 .socail ul{
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
-    text-align: center;
-    align-items: center;
 }
 .socail ul li{
     margin: 20px;
@@ -140,13 +137,16 @@ nav ul li a:hover {
     font-size: 30px;
     padding: 10px;
     color: var(--color-1);
-   
     border-radius: 50%;
 }
 .socail ul li i:hover{
     transform: scale(1.1);
     color: var(--color-3);
     background-color: var(--color-1);
+}
+/*ABOUT US*/
+.about-us img {
+    width: 400px;
 }
 /* Responsive Navigation */
 @media (max-width: 870px) {
